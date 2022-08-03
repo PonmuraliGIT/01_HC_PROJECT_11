@@ -1,0 +1,351 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  font-family: sans-serif;
+}
+body {
+  font-size: 62.5%;
+}
+header {
+  margin:0 24px;
+  padding:  24px;
+  display:flex;
+  justify-content: space-between;
+  color:rgb(0, 0, 0);
+  font-size:1rem;
+}
+
+.logo {
+  width:104px;
+}
+nav {
+  justify-self: flex-end;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  color:black;
+  column-gap: 24px; 
+  cursor:pointer;
+}
+.nav-item:first-child {
+  font-weight:bold;
+}
+.nav-item:hover{
+  color:blueviolet;
+}
+.register-button {
+  background: transparent; 
+  border-radius:8px;
+  padding: 8px 16px;
+  color:rgba(0,108,209,1);
+  cursor:pointer;
+  font-size:1rem;
+}
+.border-gradient {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left,  rgba(0,108,209,1),rgba(0,194,255,1) );
+  
+}
+/* linear-gradient(4deg, rgba(2,67,148,1) 0%, rgba(0,108,209,1) 35%, rgba(0,194,255,1) 100%); */
+ 
+.hero-section {
+  margin:0 24px;
+  padding:  24px;
+  display: flex;
+}
+.hero-heading {
+  line-height: 1.5;
+  margin-bottom:24px;
+  font-size:2rem;
+}
+.hero-img {
+  width :75%;
+}
+.hero-description{
+line-height : 1.5;
+color : #a9a8a8;
+font-size:1rem;
+width:50%;
+margin-bottom:24px;
+}
+.hero-button {
+  /* background-color: blueviolet; */
+  background: rgb(2,67,148);
+background: linear-gradient(4deg, rgba(2,67,148,1) 0%, rgba(0,108,209,1) 35%, rgba(0,194,255,1) 100%);
+  padding:16px 32px;
+  color:white;
+  outline:none;
+  border:none;
+  border-radius:4px;
+  box-shadow: -4px 6px 37px -9px rgba(0,0,0,0.75);
+  font-size:1rem;
+}
+
+.btn-back {
+  background: rgb(2,67,148);
+  background: linear-gradient(4deg, rgba(2,67,148,1) 0%, rgba(0,108,209,1) 35%, rgba(0,194,255,1) 100%);
+  box-shadow: -4px 6px 37px -9px rgba(0,0,0,0.75);
+  border:none;
+}
+
+/* Service Section   */
+.service-section {
+  
+    margin:0 24px;
+    padding:  24px;
+    display: flex;
+  
+}
+.service-section-2 {
+margin:0 auto;
+}
+.service-heading {
+  line-height: 1.5;
+  margin-bottom:24px;
+  font-size: 2rem;
+  padding:0 36px;
+  flex-basis:40%;
+}
+.service-cards {
+  display : grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin:0 24px;
+  /* padding: 8px 24px 24px 24px; */
+  padding: 0 48px;
+  color : #a9a8a8;
+font-size:1rem;
+column-gap: 16px;
+
+}
+
+.service-card {
+  display:flex;
+  flex-direction: column;
+  row-gap : 8px;
+  
+}
+.service-card h2 {
+  color:black;
+}
+.service-card p {
+  width:80%;
+  font-size:1rem;
+  line-height: 1.5;
+  width:70%;
+}
+.service-card img{
+width:84px;
+}
+.plan-section {
+  background: linear-gradient(to bottom,  rgba(0,108,209,1),rgba(0,194,255,1) ); 
+  /* rgb(73, 43, 226); */
+  margin:24px 0;
+  padding:24px;
+}
+.plan-section h1 {
+  color:white;
+  text-align: center;
+  padding:24px;
+  font-size:2rem;
+}
+
+/* Price/Plan Section  */
+
+.price-cards {
+  display: flex;
+  column-gap:16px;
+  padding:16px;
+  justify-content: center;
+  align-items: center;
+  font-size:1.2rem;
+}
+
+.price-card {
+  background-color: #fff;
+  /* padding:20px; */
+  border-radius: 4px;
+  display:flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.price-card ul {
+  /* margin-top:24px; */
+  padding:0 28px;
+
+}
+
+.price-card button {
+  margin:40px; 
+}
+.price-card ul li{
+  margin: 0;
+	padding: 16px 0 16px 36px;
+	list-style: none;
+	background-image: url("images/correct.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 16px;
+}
+.price-card span,p {
+  color :#a9a8a8;
+}
+
+.price-card-amount, .price-card-caption {
+  text-align:center;
+  
+}
+.popular h2{
+  margin-bottom:16px;
+  color:white;
+}
+.popular {
+  background-color: rgb(31, 25, 25);
+  padding:16px;
+  border-radius:0 0 16px 16px;
+}
+
+.normal{
+  /* padding:8px;
+  margin:8px; */
+  padding:16px;
+}
+.normal h2{
+  margin-bottom:16px;
+}
+ .price-card:nth-child(2) button {
+  background-color:blueviolet;
+  color:white;
+  
+
+} 
+
+.price-card-amount {
+  color:black;
+}
+
+.customer-section {
+  margin:24px 0;
+  /* padding:24px; */
+  
+}
+
+.customer-section h1 {
+  text-align: center;
+  padding:24px;
+  font-size:2rem;
+}
+.customer-section>p {
+  font-size:1rem;
+  
+ padding:0 128px;
+  text-align: center;
+  margin:0;
+}
+.customer-cards {
+  display:grid;
+  grid-template-columns : 1fr 1fr;
+  gap: 16px;
+  padding : 0 36px;
+}
+.customer-card {
+  margin: 24px 48px;
+  display:flex;
+  flex-direction: column;
+  row-gap: 16px;
+  border:1px solid #eceaea;
+  padding:16px;
+}
+.customer-card p  {
+  text-align: left;
+  color :rgb(14, 11, 11);
+  font-size:1rem;
+  width:80%;
+}
+.customer-footer {
+  display:flex;
+  
+  
+}
+.customer-name {
+  display:flex;
+ flex-direction: column;
+ font-size:0.8rem;
+ row-gap: 8px;
+ padding: 4px 8px;
+}
+
+.customer-name span:first-child {
+  font-weight:bold;
+  font-size:1rem;
+}
+
+.circle {
+  height: 36px;
+  width: 36px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+/* Register Section  */
+.register-section {
+  background-color: rgb(73, 43, 226);
+  background:  linear-gradient(to bottom,  rgba(0, 108, 209, 0.712),rgba(0, 195, 255, 0.696) ),url('images/cross_pattern.jpg') ; 
+  margin:24px 0;
+  padding:36px;
+  display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.part-1 {
+  flex-basis: 30%;
+}
+.part-1 h1 {
+  color:white;
+  margin-bottom : 16px;
+  font-size:2rem;
+}
+.part-1 p {
+  font-size:1rem;
+  line-height:1.5;
+  color:rgb(255, 255, 255);
+}
+.register-section button {
+  justify-self: center;
+  border : 2px solid white;
+  color:white;
+  font-size:1rem;
+}
+
+.footer-section {
+  display:grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  padding:36px;
+}
+.logo-section img {
+  width : 80px;
+  margin-bottom:16px;
+}
+.logo-section p {
+  font-size:1rem;
+  line-height:1.5;
+}
+.footer-section ul {
+  list-style-type:none;
+}
+.footer-section li:first-child {
+  margin-bottom:12px;
+  font-size:1rem;
+  font-weight: 700;
+}
+.footer-section li {
+  margin-bottom:8px;
+  font-size:1rem;
+}
+.social {
+  width:140px;
+  text-align: left;
+}
